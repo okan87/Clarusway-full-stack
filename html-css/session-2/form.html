@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #food {
+            width: 20%;
+            border: 5px solid red;
+        }
+
+        #food2 {
+            width: 20%;
+            border: 5px solid orange;
+        }
+        #comment {
+            resize: none;
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+    <title>Forms</title>
+</head>
+
+<body style="margin-bottom: 500px;">
+    <h1>Welcome to Clarusway</h1>
+
+    <form action="result.html" method="get">
+        <div>
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name" placeholder="please name!">
+            <br>
+            <label for="sname">Surname :</label>
+            <input type="text" name="Surname" id="sname" placeholder="please surname!">
+
+        </div>
+        <div>
+            <label for="pword">Password :</label>
+            <input type="password" name="password" id="pword">
+        </div>
+        <div>
+            <p>Sex</p>
+            <label for="gender1">Male</label>
+            <input type="radio" name="sex" id="gender1" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="sex" id="female">
+        </div>
+        <div>
+            <p>Your favourote animal</p>
+            <input type="checkbox" name="animal" id="panda" value="panda">
+            <label for="panda">Panda</label>
+            <input type="checkbox" name="animal2" id="fish" value="fish">
+            <label for="fish">Fish</label>
+            <input type="checkbox" name="animal3" id="horse" value="Unicorn">
+            <label for="horse">Unicorn</label>
+        </div>
+
+        <div>
+            <label for="age">Age :</label>
+            <input type="number" name="age " id="age" min="18" max="50">
+        </div>
+
+        <div>
+            <label for="search">Search :</label>
+            <input type="search" name="searched_word" id="search">
+        </div>
+
+        <div>
+            <label for="color">Choose color</label>
+            <input type="color" name="choosen_color" id="color">
+        </div>
+
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="chosen_name" id="date">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="entered_email" id="email">
+        </div>
+
+        <div>
+            <label for="file">File</label>
+            <input type="file" name="chosen_file" id="file">
+        </div>
+        <div>
+            <label for="tel">Phone number</label>
+            <input type="tel" name="tel_nu" id="tel" pattern="[0-9]{3}" pattern="[0-9,+]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+        </div>
+
+        <div>
+            <label for="food">which food :</label>
+            <br>
+            <select name="chosen_food" id="food" size="3" multiple>
+                <option value="sutlac">Sutlac</option>
+                <option value="keskul">Keskul</option>
+                <option value="asure">Asure</option>
+                <option value="pudding">Pudding</option>
+                <option value="kazandibi">Kazandibi</option>
+                <option value="magnolia">Magnolia</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="food2">which food :</label>
+            <br>
+            <select name="chosen_food" id="food2" size="5" multiple>
+                <optgroup label="milk">
+                    <option value="sutlac">Sutlac</option>
+                    <option value="keskul">Keskul</option>
+                    <option value="asure">Asure</option>
+                    <option value="pudding">Pudding</option>
+                    <option value="kazandibi">Kazandibi</option>
+                    <option value="magnolia">Magnolia</option>
+                </optgroup>
+
+                <optgroup label="serbet">
+                    <option value="baklava">Baklava</option>
+                    <option value="kunefe">Kunefe</option>
+                    <option value="katmer">Katmer</option>
+                    <option value="kadayif">Kadayif</option>
+                    <option value="kemalpasa">Kemalpasa</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="comment">Comment :</label>
+            <textarea name="done_comment" id="comment" placeholder="please comment"></textarea>
+        </div>
+
+        <div>
+            <label for="input-browser">which browser do you use :</label>
+            <input type="text" name="using_browser" id="input-browser" list="browsers">
+            <datalist id="browsers">
+                <option value="firefox"></option>
+                <option value="chrome"></option>
+                <option value="safari"></option>
+                <option value="edge"></option>
+            </datalist>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Personel information</legend>
+                <label for="fname">Name</label>
+                <input type="text" name="name" id="fname">
+                <br>
+                <label for="sname">Surname</label>
+                <input type="text" name="surname" id="sname">
+            </fieldset>
+        </div>
+
+
+        <input type="submit" value="Send">
+        <br><br><br>
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
