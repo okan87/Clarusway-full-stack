@@ -1,0 +1,25 @@
+.p1{
+    border-width: 3px 10px 20px 15px;
+    border-style: solid;
+    border-color: blue yellow green;
+}
+/* Yukarida 3 satrda verildi....Asagida tek satirda */
+.p2{
+    border: 5px solid red;
+}
+
+.p3{
+    border: 10px solid orange;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: rebeccapurple;
+
+}
+
+.p4{
+    border: 20px double blue; 
+}
+.p5{
+    border: 15px groove orange;
+}
