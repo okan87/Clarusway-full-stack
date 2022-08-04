@@ -4,16 +4,23 @@ h2{
 #par1{
     color: blue;
     text-align: center;
+    text-transform: uppercase;
 }
 #par2{
     color: rgba(255, 0, 0, 1);
+    text-align: right;
 }
 #par3{
     color: #3fb81d;
+    text-align: justify;
+    text-decoration: line-through black 5px;
 }
 #par4{
     color: hsl(0, 100% , 50%);
+    text-decoration: overline;
+
 }
 #par5{
     color: fuchsia;
+    text-decoration: underline wavy black;
 }
