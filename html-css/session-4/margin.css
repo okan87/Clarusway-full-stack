@@ -1,0 +1,13 @@
+h1{
+    background-color: aquamarine;
+    margin-bottom: 0;
+}
+#part1{
+    background-color: coral;
+    /* margin-top: 0; */
+    margin: auto;
+    width: 250px;
+}
+#part2{
+    background-color: cornflowerblue;
+}
